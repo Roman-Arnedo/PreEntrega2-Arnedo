@@ -1,0 +1,88 @@
+.footer-container{
+    height: map-get($footer, h);
+    width: map-get($footer, w);
+    @extend %grid-footer;
+    background-color: map-get($footer, bg-color);
+    gap: map-get($footer, gap);  
+    div{
+        margin: 20px 50px 0px 50px;
+        color: nth($color, 4);
+        ul{
+            list-style-type: none;
+        }
+    } 
+}
+
+.footer-nav{
+    grid-area: navegacion;
+    height: nth($sizes, 6);
+    li{
+        a{
+            text-decoration: none;
+            color: nth($color, 4);
+        }
+    }
+}
+
+.h4-footer{
+    font-size: nth($sizes, 1)
+}
+
+.mi-lista{
+    li{
+        font-size: nth($sizes, 5);  
+    }
+}
+
+.pagos{
+    grid-area: pagos;
+    height: nth($sizes, 6);
+}
+
+.contacto{
+    grid-area: contacto;
+    height: nth($sizes, 6);
+    p{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: nth($sizes, 5);
+    }
+}
+
+.map{
+    grid-area: map;
+    height: nth($sizes, 6);
+}
+
+@media (max-width: 576px){
+    .footer-container{
+        height: 250px;
+        width: nth($sizes, 2);
+        @include FooterDSP (flex, column, center, center, center);
+    }
+    .pagos{
+        display: map-get($dpl, n);
+    }
+    .map{
+        display: map-get($dpl, n);
+    }
+    .footer-nav{
+        ul{
+            @include Disposicion(center, center);
+        }
+    }
+    ol, ul {
+        display: map-get($dpl, f);
+        flex-direction: column;
+    }
+    .footer-container{
+        div{
+            margin: 0px 50px 0px 50px;
+            color: nth($color, )
+            
+        } 
+    }
+    .contacto{
+        @extend %FlexColumnFooter;
+    }
+
+}

@@ -1,130 +1,18 @@
-.div-icons {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 60 |         @include FooterDSP (flex, column, center, center, center);
+ *    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\componentes\_footer.scss 60:9  @import
+ *   scss\style.scss 7:9                 root stylesheet */
 
-.responsive {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 60 \2502          @include FooterDSP (flex, column, center, center, center);\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\componentes\\_footer.scss 60:9  @import\a   scss\\style.scss 7:9                 root stylesheet";
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  line-height: 1;
-}
-
-ol, ul {
-  padding-left: 0 !important;
-}
-
-.container-fluid {
-  --bs-gutter-x: 0 !important;
-  --bs-gutter-y: 0;
-  width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.div-icons {
-  background-image: url(https://thumbs.dreamstime.com/b/burgers-seamless-pattern-background-hand-drawn-hamburger-french-fries-fast-food-junk-american-vector-illustration-restaurant-143495721.jpg);
-  height: 60px;
-  padding-right: 10px;
-}
-.div-icons div a img {
-  height: 40px;
-  width: 40px;
-  border-radius: 30px;
-}
-
-.logo-nav {
-  width: 45px;
-  height: 45px;
-}
-
-.nav-yo {
-  background-color: #DEA450;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
-
-.nav-title {
-  font-family: "Roboto Condensed" sans-serif;
-  font-style: italic;
-}
-
-.div-flex {
-  justify-content: end;
-}
-
-ul li {
-  font-family: "Roboto Condensed" sans-serif;
-  font-size: 19px;
-}
-
-.nav-text-ro {
-  color: #9b461f;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 1000;
-  font-family: "Josefin Sans" sans-serif;
-  font-style: italic;
-}
-
-.div-size {
-  height: 706px;
-}
-
-.img-size {
-  width: 100%;
-  height: 706px;
-}
-
-@media (max-width: 576px) {
-  .display-carrusel {
-    display: none;
-  }
-}
-.img-celu {
-  display: none;
-  height: 600px;
-  width: 100%;
-}
-
-@media (max-width: 576px) {
-  .img-celu {
-    display: block;
-  }
-}
-.h1-responsive {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  color: #fff;
-  font-size: 17px !important;
-}
-
-@media (min-width: 576px) {
-  .h1-responsive {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    color: #fff;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */

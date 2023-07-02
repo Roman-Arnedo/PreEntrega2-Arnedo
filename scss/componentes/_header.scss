@@ -47,7 +47,7 @@ ol, ul {
 }
 
 .nav-title{
-    font-family: nth($font, 3);
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: nth($f-style, 1);
 }
 
@@ -57,7 +57,7 @@ ol, ul {
 
 ul{
     li{
-        font-family: nth($font, 3);
+        font-family: 'Roboto Condensed', sans-serif;
         font-size: nth($sizes , 1);
     }
 }
@@ -68,6 +68,6 @@ ul{
     text-decoration: map-get($navbar, textdeco);
     font-size: map-get($navbar, f-s);
     font-weight: map-get($navbar, f-w);
-    font-family: nth($font, 2);
+    font-family: 'Josefin Sans', sans-serif;
     font-style: nth($f-style, 1);
 }

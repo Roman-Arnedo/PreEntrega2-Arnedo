@@ -1,0 +1,12 @@
+@mixin FooterDSP($dsp, $fxdire, $jstI, $algn, $jstC){
+    display: $dsp;
+    flex-direction: $fxdire;
+    justify-items: $jstI;
+    align-items: $algn;
+    justify-content: $jstC;
+}
+
+@mixin Disposicion($jstI, $algn){
+    justify-items: $jstI;
+    align-items: $algn;
+}

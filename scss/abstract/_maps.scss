@@ -1,0 +1,31 @@
+$social:(
+    bg-img-sc: url(https://thumbs.dreamstime.com/b/burgers-seamless-pattern-background-hand-drawn-hamburger-french-fries-fast-food-junk-american-vector-illustration-restaurant-143495721.jpg),
+    pd-r: 10px,
+    h: 60px,
+    icons: 40px,
+    bd-rd: 30px,
+);
+
+$navbar:(
+    logo-h: 45px,
+    logo-w: 45px,
+    text-s: 19px,
+    pd: 10px,
+    textdeco: none,
+    f-s: 20px,
+    f-w: 1000,
+);
+
+$footer:(
+    h: 150px,
+    w: 100%,
+    bg-color: #000000,
+    gap: 1px,
+);
+
+$dpl:(
+    n: none,
+    f: flex,
+    g: grid,
+    b: block,
+);

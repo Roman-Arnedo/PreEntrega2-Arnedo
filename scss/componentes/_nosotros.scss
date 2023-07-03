@@ -1,0 +1,36 @@
+.div-nosotros{
+    display: nth($display, 1);
+    height: nth($sizes, 3);
+    width: nth($sizes, 2);
+    background-color: rgb(77, 84, 90);
+}
+
+.historia{
+    width: 60%;
+    display: nth($display, 1);
+    flex-direction: nth($flexdire, 1);
+    align-items: nth($lugar, 1);
+    justify-content: nth($lugar, 1);
+    h4{
+        font-family: 'Cormorant Upright', serif;
+        font-style: nth($f-style, 1);
+        font-weight: nth($sizes, 9);
+        font-size: nth($sizes, 8);
+    }
+    p{
+        font-family: 'Cormorant Upright', serif;
+        font-weight: 300;
+        font-size: nth($sizes, 1);
+    }
+}
+
+.nosotros-img{
+    display: nth($display, 1);
+    width: 40%;
+    justify-content: nth($lugar, 1);
+    align-items: nth($lugar, 1);
+    img{
+        height: 60%;
+        width: 90%;
+    }
+}

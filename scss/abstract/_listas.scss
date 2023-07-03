@@ -16,10 +16,34 @@ $f-style:
 italic;
 
 $sizes:
-19px,
+20px,
 100%,
 706px,
 600px,
 13px,
-110px;
+110px,
+large,
+30px,
+600,
+800,
+25px;
 
+$position:
+absolute,
+relative;
+
+$lugar:
+center,
+end,
+start,
+hidden,
+flex-start;
+
+$display: 
+flex,
+block,
+none;
+
+$flexdire:
+column,
+column-reverse;

@@ -6,7 +6,7 @@
     justify-content: $jstC;
 }
 
-@mixin Disposicion($jstI, $algn){
+@mixin Items($jstI, $algn){
     justify-items: $jstI;
     align-items: $algn;
 }

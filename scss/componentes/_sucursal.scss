@@ -1,0 +1,89 @@
+.carrusel-sucursal{
+    position: nth($position , 2);
+}
+
+.text-sucursal{
+    @extend %TextBox;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: nth($sizes, 9);
+    font-size: nth($sizes, 8);
+}
+
+.div-mobile-sucursal{
+    display: nth($display, 3);
+}
+
+@media (max-width: 576px){
+    .carrusel-sucursal{
+        display: nth($display, 3);
+    }
+    .text-sucursal{
+        display: nth($display, 3);
+    }
+    .div-mobile-sucursal{
+        display: nth($display, 1);
+        flex-direction: nth($flexdire, 2);
+        align-items: nth($lugar, 1);
+        justify-content: nth($lugar, 1);
+        background-image: url(../img/sucursal\ 1.jpg);
+        width: nth($sizes, 2);
+        height: nth($sizes, 4);
+        position: nth($position , 2);
+        overflow: nth($lugar, 4);
+    }
+    .img-mobile-sucursal{
+        width: 60%;
+        height: 60%;
+    }
+    .h1-mobile-sucursal{
+        margin-top: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: nth($sizes, 11);
+        color: nth($color, 4);
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: nth($f-style, 1);
+        font-weight: nth($sizes, 10);
+    }
+    .h2-mobile-sucursal{
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: nth($f-style, 1);
+        font-weight: nth($sizes, 9);
+    }
+    .p-sucursal{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: nth($sizes, 1);
+    }
+    .container {
+        max-width: nth($sizes, 2);
+        padding: nth($sizes, 11);
+    }
+      
+    .header {
+        text-align: nth($lugar, 1);
+        margin-bottom: nth($sizes, 1);
+        h1{
+            font-size: nth($sizes, 11);
+        }
+    }
+      
+    .content {
+        display: nth($display, 1);
+        flex-direction: nth($flexdire, 1);
+    }
+      
+    .address {
+        background-color: nth($color, 6);
+        padding: nth($sizes, 11);
+        margin-bottom: nth($sizes, 1);
+        h2{
+            font-size: nth($sizes, 1);
+            margin-bottom: 10px;
+        }
+    }
+      
+    .div-map-sucursal{
+        display: nth($display, 1);
+        justify-content: nth($lugar, 1);
+        align-items: nth($lugar, 1);
+    }
+}

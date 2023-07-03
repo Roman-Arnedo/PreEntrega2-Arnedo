@@ -67,22 +67,29 @@
     }
     .footer-nav{
         ul{
-            @include Disposicion(center, center);
+            @include Items(center, center);
+            li{
+                padding: 2px;
+            }
         }
     }
     ol, ul {
         display: map-get($dpl, f);
-        flex-direction: column;
+        flex-direction: nth($flexdire, 1);
     }
     .footer-container{
         div{
             margin: 0px 50px 0px 50px;
-            color: nth($color, )
+            color: nth($color, 4)
             
         } 
     }
     .contacto{
-        @extend %FlexColumnFooter;
+        display: nth($display, 1);
+        flex-direction: nth($flexdire, 1);
+        text-align: nth($lugar, 1);
+        justify-content: nth($lugar, 1);
+
     }
 
 }

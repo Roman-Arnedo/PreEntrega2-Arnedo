@@ -1,0 +1,82 @@
+.div-promo{
+    @extend %gridpromo;
+}
+
+.img-1{
+    grid-area: img1;
+    height: nth($sizes, 2);
+}
+
+.img-2{
+    grid-area: img2;
+    height: nth($sizes, 2);
+}
+
+.img-3{
+    grid-area: img3;
+    height: nth($sizes, 2);
+}
+
+.img-4{
+    grid-area: img4;
+    height: nth($sizes, 2);
+}
+
+.lista-1{
+    grid-area: lista1;
+    justify-self: nth($lugar, 5);
+}
+
+.lista-2{
+    grid-area: lista2;
+    justify-self: nth($lugar, 5);
+}
+
+.lista-3{
+    grid-area: lista3;
+    justify-self: nth($lugar, 5);
+    height: 158.98px;
+}
+
+.lista-4{
+    grid-area: lista4;
+    justify-self: nth($lugar, 5);
+}
+
+.texto{
+    grid-area: texto;
+    align-self: nth($lugar, 5);
+    margin-top: nth($sizes, 8);
+    margin-right: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: nth($sizes, 1);
+    font-weight: nth($sizes, 9);
+    background-color: nth($color, 3);
+    padding: 10px;
+}
+
+.no-rem{
+    margin-bottom: 0rem !important;
+}
+
+.promo-ul{
+    text-decoration: nth($display, 3);
+    list-style-type: nth($display, 3);
+    margin-bottom: 0px !important;
+    height: nth($sizes, 2);
+    margin: 10px;
+}
+
+.h6-lista{
+    margin-left: 350px;
+    padding: nth($sizes, 8);
+}
+
+.p-promos{
+    width: 300px;
+}
+
+.promo-img{
+    height: 80% !important;
+    margin: 10px;
+}

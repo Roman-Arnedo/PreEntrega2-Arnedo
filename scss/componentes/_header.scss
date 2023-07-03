@@ -52,7 +52,7 @@ ol, ul {
 }
 
 .div-flex{
-    justify-content: end;
+    justify-content: nth($lugar, 2);
 }
 
 ul{

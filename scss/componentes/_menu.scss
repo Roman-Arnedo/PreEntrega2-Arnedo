@@ -1,16 +1,34 @@
 .main-menu{
     display: map-get($dpl, f);
+    flex-direction: column;
     justify-content: nth($lugar, 1);
     min-height: 68.9vh;
+    background-image: url(../img/papitas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.h1menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
 }
 
 .menu{
     display: map-get($dpl, f);
     align-items: nth($lugar, 1);
+    justify-content: center;
     position: nth($position, 2);
     height: nth($sizes, 2);
     width: nth($sizes, 2);
+
 }
 
 .img-menu{
@@ -19,7 +37,8 @@
 }
 
 .ul-menu{
-    @extend %TextBox;
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
 
 .ul-menu{
@@ -28,7 +47,10 @@
         text-align: nth($lugar, 1);
         font-family: 'Josefin Sans', sans-serif;
         font-style: nth($f-style, 1);
-        font-size: nth($sizes, 7);
+        font-size: nth($sizes, 1);
+        width: 100%;
+        height: 49.1px;
+        color: #ffffff;
     }
 }
 
@@ -44,3 +66,103 @@
         }
     }
 }
+
+@media (max-width: 576px){
+    .main-menu{
+        display: map-get($dpl, f);
+        flex-direction: column;
+        justify-content: nth($lugar, 1);
+        min-height: 68.9vh;
+    }
+    
+    .menu{
+        display: map-get($dpl, f);
+        align-items: nth($lugar, 1);
+        position: nth($position, 2);
+        height: nth($sizes, 2);
+        width: nth($sizes, 2);
+        background: rgb(155,70,31);
+        background: -moz-linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
+        background: linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9b461f",endColorstr="#ffffff",GradientType=1);   
+        ul{
+            width: 90%;
+            li{
+                list-style-type: none;
+                text-align: nth($lugar, 1);
+                font-family: 'Josefin Sans', sans-serif;
+                font-style: nth($f-style, 1);
+                font-size: nth($sizes, 7);
+                p{
+                    font-style: normal;
+                    text-align: nth($lugar, 1);
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-size:  15px;
+                }
+            }
+        }
+    }
+
+    .ul-menu{
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ul-menu{
+        li{
+            list-style-type: none;
+            text-align: nth($lugar, 1);
+            font-family: 'Josefin Sans', sans-serif;
+            font-style: nth($f-style, 1);
+            font-size: nth($sizes, 1);
+            width: 100%;
+            height: 50px;
+            color: #000000;
+        }
+    }
+
+    .img-menu{
+        visibility: hidden;
+     }
+
+     .h1menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+    }
+
+    .main-menu{
+        display: map-get($dpl, f);
+        flex-direction: column;
+        justify-content: nth($lugar, 1);
+        min-height: 68.9vh;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .h1menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: italic;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0);
+        color: #000000;
+    }
+}
+
+

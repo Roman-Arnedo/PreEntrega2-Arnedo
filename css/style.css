@@ -36,6 +36,31 @@
   grid-gap: 10px;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  line-height: 1;
+}
+
+ol, ul {
+  padding-left: 0 !important;
+}
+
+.container-fluid {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .div-icons {
   background-image: url(https://thumbs.dreamstime.com/b/burgers-seamless-pattern-background-hand-drawn-hamburger-french-fries-fast-food-junk-american-vector-illustration-restaurant-143495721.jpg);
   height: 60px;

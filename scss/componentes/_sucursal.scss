@@ -87,4 +87,8 @@
         justify-content: nth($lugar, 1);
         align-items: nth($lugar, 1);
     }
+    
+    .map-mobile-sucursal{
+        width: 100%;
+    }
 }

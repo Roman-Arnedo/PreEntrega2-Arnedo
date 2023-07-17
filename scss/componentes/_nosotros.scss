@@ -2,12 +2,11 @@
     display: nth($display, 1);
     height: nth($sizes, 3);
     width: nth($sizes, 2);
-    background: rgb(155,70,31);
-    background: -moz-linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
-    background: linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9b461f",endColorstr="#ffffff",GradientType=1);
-
+    background-image: url(https://pbs.twimg.com/media/DzXjDxlWkAEmVI2?format=jpg&name=4096x4096);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    justify-content: center;
+    align-items: center;
 }
 
 .historia{
@@ -21,47 +20,88 @@
         font-style: nth($f-style, 1);
         font-weight: nth($sizes, 9);
         font-size: nth($sizes, 8);
-        color: nth($color, 8);
+        color: white;
     }
     p{
         font-family: 'Cormorant Upright', serif;
         font-weight: 300;
         font-size: nth($sizes, 1);
-        color: nth($color, 8);
+        color: white;
         padding-left: nth($sizes, 1);
     }
 }
 
-.nosotros-img{
+.div-containerr{
     display: nth($display, 1);
-    width: 40%;
-    justify-content: nth($lugar, 1);
+    justify-content: space-evenly;
     align-items: nth($lugar, 1);
-    img{
-        height: 60%;
-        width: 90%;
-    }
+    flex-direction: column;
+    width: 70%;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"] {
+    width: 100%;
+    padding: 6px;
+    font-size: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.h4-form{
+    font-family: 'Cormorant Upright', serif;
+    font-style: nth($f-style, 1);
+    font-weight: nth($sizes, 9);
+    font-size: 24px;
+    color: white;
+}
+
+
 
 @media (max-width: 576px){
     .div-nosotros{
-        display: flex;
-        height: 706px;
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
+        display: nth($display, 1);
+        height: nth($sizes, 3);
+        width: nth($sizes, 2);
+        background-image: url(https://pbs.twimg.com/media/DzXjDxlWkAEmVI2?format=jpg&name=4096x4096);
+        background-color: rgba(0, 0, 0, 0.5);
+        background-blend-mode: multiply;
         justify-content: center;
         align-items: center;
-        background: rgb(155,70,31);
-        background: -moz-linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
-        background: linear-gradient(0deg, rgba(155,70,31,1) 0%, rgba(222,164,80,1) 80%, rgba(255,255,255,0.5746673669467788) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9b461f",endColorstr="#ffffff",GradientType=1);
     }
-
+    
     .historia{
-        width: 90%;
+        width: 100%;
         display: nth($display, 1);
         flex-direction: nth($flexdire, 1);
         align-items: nth($lugar, 1);
@@ -71,27 +111,71 @@
             font-style: nth($f-style, 1);
             font-weight: nth($sizes, 9);
             font-size: nth($sizes, 8);
-            color: nth($color, 8);
+            color: white;
         }
         p{
             font-family: 'Cormorant Upright', serif;
             font-weight: 300;
-            font-size: nth($sizes, 1);
-            color: nth($color, 8);
+            font-size: 16px;
+            color: white;
             padding-left: nth($sizes, 1);
         }
     }
-
-    .nosotros-img{
+    
+    .div-containerr{
         display: nth($display, 1);
-        width: 60%;
-        justify-content: nth($lugar, 1);
+        justify-content: space-evenly;
         align-items: nth($lugar, 1);
-        margin-top: 20px;
-        img{
-            height: 100%;
-            width: 100%;
-        }
+        flex-direction: column;
+        width: 70%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    
+    label {
+        font-weight: bold;
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="email"] {
+        width: 100%;
+        padding: 6px;
+        font-size: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    
+    .h4-form{
+        font-family: 'Cormorant Upright', serif;
+        font-style: nth($f-style, 1);
+        font-weight: nth($sizes, 9);
+        font-size: 18px;
+        color: white;
+        width: 100%;
     }
     
 }

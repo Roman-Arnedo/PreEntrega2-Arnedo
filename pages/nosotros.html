@@ -57,6 +57,7 @@
     </nav>
 
   <div class="div-nosotros">
+    <div class="div-containerr">
     <main class="historia">
 
       <h4>Historia</h4>
@@ -64,12 +65,40 @@
       <p>Somos un grupo de amigos que quiso empezar un emprendimiento juntos y que mejor que una hamburgueseria. Nuestros productos de la mas alta calidad estan pensados para repartir alegria en cada bocado.<br>Todo comienza en una tarde de primavera en el colegio donde cansados de los estudios decidimos abrir nuestra propia casa de hamburguesas, ya que a nosotros nos encantan. Nunca pensamos lograr lo que logramos hoy en dia y que una simple fantasia se convierta en una sabrosa experiencia.</p>
     </main>
 
-
-      <div class="nosotros-img" data-aos="zoom-in-up">
-        <img src="../img/cole.jpg" alt="Imagen del Colegio instituto Juan Manuel Berlgrano QHS Quilmes">
+    <h4 class="h4-form">Para saber más acerca de nosotros contáctanos</h4>
+    <form action="#" method="post" class="form">
+      <div class="flex-form">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" required class="input-form">
       </div>
 
+      <div>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" required>
+      </div>
+
+      <div>
+          <label for="edad">Edad (mínimo 18 años):</label>
+          <input type="number" name="edad" min="18" required>
+      </div>
+
+      <div>
+          <label for="telefono">Número telefónico:</label>
+          <input type="tel" name="telefono" required>
+      </div>
+
+      <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" required>
+      </div>
+      <br>
+      <input type="submit" value="Enviar">
+  </form>
+
   </div>
+
+  </div>
+  
 
   <footer>
 
